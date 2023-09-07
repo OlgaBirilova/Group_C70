@@ -74,19 +74,27 @@ public class hw4 {
 //        Пройти по массиву и поменять местами элементы первый и последний, второй и
 //        предпоследний и т.д.
         System.out.println("///Task 5:///");
-        int[] task_5 = new int[8];
-        for (int i = 0; i < 8; i++) {
+        int[] task_5 = new int[5];
+        for (int i = 0; i < task_5.length; i++) {
             task_5[i] = (int) (Math.random() * 20 - 10);
         }
         System.out.println(Arrays.toString(task_5));
         int y;
         int x;
-        for (y = 0, x = task_5.length-1; y < task_5.length/2 && x >= task_5.length/2; y++, x--) {
-            int paramY = task_5[y];
-            int paramX = task_5[x];
-            task_5[y] = paramX;
-            task_5[x] = paramY;
-//            System.out.println(Arrays.toString(task_5));
+        if (task_5.length % 2 == 0) {
+            for (y = 0, x = task_5.length - 1; y < task_5.length / 2 && x >= task_5.length / 2; y++, x--) {
+                int paramY = task_5[y];
+                int paramX = task_5[x];
+                task_5[y] = paramX;
+                task_5[x] = paramY;
+            }
+        }else{
+            for (y = 0, x = task_5.length - 1; y < (task_5.length - 1) / 2 && x >= (task_5.length + 1) / 2; y++, x--) {
+                int paramY = task_5[y];
+                int paramX = task_5[x];
+                task_5[y] = paramX;
+                task_5[x] = paramY;
+            }
         }
         System.out.println(Arrays.toString(task_5));
 

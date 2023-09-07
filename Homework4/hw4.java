@@ -73,33 +73,36 @@ public class hw4 {
 //        Task 5:
 //        Пройти по массиву и поменять местами элементы первый и последний, второй и
 //        предпоследний и т.д.
-//        System.out.println("///Task 5:///");
-//        int[] task_5 = new int[8];
-//        for (int i = 0; i < 8; i++) {
-//            task_5[i] = (int) (Math.random() * 20 - 10);
-//        }
-//        System.out.println(Arrays.toString(task_5));
-//        for (int i = 0; i < 8; i++) {
-//            task_5[i] = (int) (Math.random() * 20 - 10);
-//        }
+        System.out.println("///Task 5:///");
+        int[] task_5 = new int[8];
+        for (int i = 0; i < 8; i++) {
+            task_5[i] = (int) (Math.random() * 20 - 10);
+        }
+        System.out.println(Arrays.toString(task_5));
+        int y;
+        int x;
+        for (y = 0, x = task_5.length-1; y < 8 && x >= 0; y++, x--) {
+            task_5[y] = task_5[x];
+        }
+        System.out.println(Arrays.toString(task_5));
 
 //        Task 6:
 //        Проверить, является ли массив возрастающей последовательностью (каждое следующее
 //        число больше предыдущего).
-        System.out.println("///Task 6:///");
-        int[] task_6 = {1, 2, 3, 4, 5};
-        boolean arg = true;
-        for (int i = 1; i < task_6.length; i++) {
-            if (task_6[i] <= task_6[i - 1]) {
-                arg = false;
-                break;
-            }
-        }
-            if(arg){
-                System.out.println("Массив является возрастающей последовательностью.");
-            } else {
-                System.out.println("Массив не является возрастающей последовательностью.");
-            }
+//        System.out.println("///Task 6:///");
+//        int[] task_6 = {1, 2, 3, 4, 5};
+//        boolean arg = true;
+//        for (int i = 1; i < task_6.length; i++) {
+//            if (task_6[i] <= task_6[i - 1]) {
+//                arg = false;
+//                break;
+//            }
+//        }
+//            if(arg){
+//                System.out.println("Массив является возрастающей последовательностью.");
+//            } else {
+//                System.out.println("Массив не является возрастающей последовательностью.");
+//            }
 //        Task *:
     }
 }

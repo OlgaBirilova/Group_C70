@@ -81,8 +81,12 @@ public class hw4 {
         System.out.println(Arrays.toString(task_5));
         int y;
         int x;
-        for (y = 0, x = task_5.length-1; y < task_5.length && x >= 0; y++, x--) {
-            task_5[y] = task_5[x];
+        for (y = 0, x = task_5.length-1; y < task_5.length/2 && x >= task_5.length/2; y++, x--) {
+            int paramY = task_5[y];
+            int paramX = task_5[x];
+            task_5[y] = paramX;
+            task_5[x] = paramY;
+//            System.out.println(Arrays.toString(task_5));
         }
         System.out.println(Arrays.toString(task_5));
 

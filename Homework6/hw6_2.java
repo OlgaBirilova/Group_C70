@@ -6,7 +6,7 @@ public class hw6_2 {
         public int countBanknoteFifty;
         public int countBanknoteHundred;
 
-        public ATM(int countBanknoteTwenty, int countBanknoteFifty, int countBanknoteHundred) {
+        ATM(int countBanknoteTwenty, int countBanknoteFifty, int countBanknoteHundred) {
             this.countBanknoteTwenty = countBanknoteTwenty;
             this.countBanknoteFifty = countBanknoteFifty;
             this.countBanknoteHundred = countBanknoteHundred;

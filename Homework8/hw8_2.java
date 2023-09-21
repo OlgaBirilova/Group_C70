@@ -9,7 +9,7 @@ public class hw8_2 {
         }
     }
 
-    public class Main {
+    public class Apple2 {
         public static void main(String[] args) {
             Apple apple = new Apple();
             apple.color = "blue";

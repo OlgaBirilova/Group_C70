@@ -43,7 +43,7 @@ public class hw8_1 {
         }
 
         public int treatmentPlan() {
-            return 2;
+            return this.treatmentPlan;
         }
     }
 

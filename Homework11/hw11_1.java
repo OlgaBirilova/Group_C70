@@ -11,7 +11,6 @@ public class hw11_1 {
             super(message);
         }
     }
-
     public static boolean registerUser(String login, String password, String confirmPassword) throws WrongLoginException, WrongPasswordException {
         if (login.length() >= 20 || login.contains(" ")) {
             throw new WrongLoginException("Неверный формат логина!");

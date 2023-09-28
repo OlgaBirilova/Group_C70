@@ -21,6 +21,8 @@
 
 2. try-catch, где catch будет несколько
 
-3. try-catch, с использование multi-catch
+3. try-catch, с использованием multi-catch
 
 4. try-catch-finally
+
+Продемонстировать обработку исключительных ситуаций на примерах.

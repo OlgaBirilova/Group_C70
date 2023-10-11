@@ -2,7 +2,7 @@ package Homework13.practice;
 
 public class task4 {
         static class Storage<T> {
-            private T item;
+            public T item;
             public Storage() {
             }
             public Storage(T item) {

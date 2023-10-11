@@ -3,8 +3,8 @@ import java.util.HashSet;
 public class task3 {
     public static void main(String[] args) {
         class Person {
-            private String name;
-            private int age;
+            public String name;
+            public int age;
             public Person(String name, int age) {
                 this.name = name;
                 this.age = age;

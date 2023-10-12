@@ -4,13 +4,13 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.File;
-import java.util.Arrays;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class task1 {
     public static void main(String[] args) {
-        String fileName = "C:\\Users\\USER\\Desktop\\TeachMeSkills\\Group_C70\\Homework12\\homework\\RomeoAndJuliet.txt";
-        String outputFileName = "C:\\Users\\USER\\Desktop\\TeachMeSkills\\Group_C70\\Homework12\\homework\\LongestWord.txt";
+        String fileName = "Homework12/homework/RomeoAndJuliet.txt";
+        String outputFileName = "Homework12/homework/LongestWord.txt";
         try {
             // Чтение файла
             BufferedReader reader = new BufferedReader(new FileReader(fileName));

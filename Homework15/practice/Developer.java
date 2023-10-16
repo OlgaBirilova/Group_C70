@@ -15,6 +15,6 @@ public class Developer {
     }
     @Override
     public String toString() {
-        return "Developer: " + "id = " + id + ", name = " + name + '.';
+        return "{Developer: " + "id = " + id + ", name = " + name + "}";
     }
 }

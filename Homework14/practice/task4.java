@@ -14,6 +14,7 @@ public class task4 {
         int result1 = logic.apply(3, 5);
         int result2 = logic.apply(7, 2);
         int result3 = logic.apply(4, 4);
+        System.out.println(result1);
         System.out.println(result2);
         System.out.println(result3);
     }
